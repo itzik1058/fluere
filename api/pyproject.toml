@@ -1,0 +1,20 @@
+[project]
+name = "fluere"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+authors = [
+    { name = "Itzik", email = "74200683+itzik1058@users.noreply.github.com" },
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+fluere = "fluere:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/fluere/__init__.py"
