@@ -1,6 +1,6 @@
 import pytest
 
-from fluere.core.builtin import BUILTIN_NODES
+from fluere.core import BUILTIN_NODES
 
 
 def test_nodes():
