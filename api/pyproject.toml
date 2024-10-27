@@ -7,7 +7,10 @@ authors = [
     { name = "Itzik", email = "74200683+itzik1058@users.noreply.github.com" },
 ]
 requires-python = ">=3.12"
-dependencies = ["fastapi[standard]>=0.115.3"]
+dependencies = [
+    "fastapi[standard]>=0.115.3",
+    "networkx>=3.4.2",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -17,7 +20,11 @@ build-backend = "hatchling.build"
 path = "src/fluere/__init__.py"
 
 [tool.uv]
-dev-dependencies = ["mypy>=1.13.0", "ruff>=0.7.1"]
+dev-dependencies = [
+    "mypy>=1.13.0",
+    "ruff>=0.7.1",
+    "types-networkx>=3.3.0.20241020",
+]
 
 [tool.ruff.lint]
 select = ["F", "E", "I", "N", "UP", "A", "C4", "RUF"]
