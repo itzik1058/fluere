@@ -82,3 +82,6 @@ class Node:
     @property
     def name(self) -> str:
         return self._signature.name
+
+    def __call__(self, *args: Any, **kwargs: Any) -> Any:
+        return self._func(*args, **kwargs)
