@@ -17,7 +17,8 @@
     "npm:tailwindcss@^3.4.14": "3.4.14_postcss@8.4.47",
     "npm:typescript-eslint@^8.7.0": "8.12.0_@typescript-eslint+parser@8.12.0__eslint@9.13.0__typescript@5.6.3_eslint@9.13.0_typescript@5.6.3",
     "npm:typescript@^5.5.3": "5.6.3",
-    "npm:vite@^5.4.8": "5.4.10"
+    "npm:vite@^5.4.8": "5.4.10",
+    "npm:zustand@^5.0.1": "5.0.1_@types+react@18.3.12_react@18.3.1"
   },
   "npm": {
     "@alloc/quick-lru@5.2.0": {
@@ -580,7 +581,7 @@
         "classcat",
         "react",
         "react-dom",
-        "zustand"
+        "zustand@4.5.5_@types+react@18.3.12_react@18.3.1"
       ]
     },
     "@xyflow/system@0.0.43": {
@@ -1670,6 +1671,13 @@
         "react",
         "use-sync-external-store"
       ]
+    },
+    "zustand@5.0.1_@types+react@18.3.12_react@18.3.1": {
+      "integrity": "sha512-pRET7Lao2z+n5R/HduXMio35TncTlSW68WsYBq2Lg1ASspsNGjpwLAsij3RpouyV6+kHMwwwzP0bZPD70/Jx/w==",
+      "dependencies": [
+        "@types/react",
+        "react"
+      ]
     }
   },
   "workspace": {
@@ -1691,7 +1699,8 @@
         "npm:tailwindcss@^3.4.14",
         "npm:typescript-eslint@^8.7.0",
         "npm:typescript@^5.5.3",
-        "npm:vite@^5.4.8"
+        "npm:vite@^5.4.8",
+        "npm:zustand@^5.0.1"
       ]
     }
   }
