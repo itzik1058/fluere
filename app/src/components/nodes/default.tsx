@@ -1,8 +1,8 @@
-import { NodeProps } from "@xyflow/react"
-import { DefaultNode } from "../../types/nodes/default"
+import { NodeProps } from "@xyflow/react";
+import { DefaultNode } from "../../types/nodes/default";
 
 function DefaultFlowNode({}: NodeProps<DefaultNode>) {
-  return <></>
+  return <></>;
 }
 
-export default DefaultFlowNode
+export default DefaultFlowNode;

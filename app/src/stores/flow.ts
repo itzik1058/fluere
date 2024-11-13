@@ -1,6 +1,6 @@
-import { addEdge, applyEdgeChanges, applyNodeChanges } from "@xyflow/react"
-import { create } from "zustand"
-import { FlowState } from "../types/flow"
+import { addEdge, applyEdgeChanges, applyNodeChanges } from "@xyflow/react";
+import { create } from "zustand";
+import { FlowState } from "../types/flow";
 
 const useFlowStore = create<FlowState>((set, get) => ({
   nodes: [],
@@ -10,28 +10,28 @@ const useFlowStore = create<FlowState>((set, get) => ({
   onNodesChange: (changes) => {
     set({
       nodes: applyNodeChanges(changes, get().nodes),
-    })
+    });
   },
   onEdgesChange: (changes) => {
     set({
       edges: applyEdgeChanges(changes, get().edges),
-    })
+    });
   },
   onConnect: (connection) => {
     set({
       edges: addEdge(connection, get().edges),
-    })
+    });
   },
 
   setNodes: (nodes) => {
-    set({ nodes })
+    set({ nodes });
   },
   setEdges: (edges) => {
-    set({ edges })
+    set({ edges });
   },
   setNextNodeId: (nodeId) => {
-    set({ nextNodeId: nodeId })
+    set({ nextNodeId: nodeId });
   },
-}))
+}));
 
-export default useFlowStore
+export default useFlowStore;
