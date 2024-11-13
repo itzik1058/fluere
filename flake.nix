@@ -19,8 +19,9 @@
         {
           default = pkgs.mkShell {
             buildInputs = with pkgs; [
+              nodejs
+              nodePackages.npm
               uv
-              deno
             ];
           };
         }
