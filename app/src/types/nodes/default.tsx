@@ -1,3 +1,3 @@
-import { Node } from "@xyflow/react";
+import { Node } from "@xyflow/react"
 
-export type DefaultNode = Node<{}, "defaultNode">;
+export type DefaultNode = Node<Record<string, unknown>, "defaultNode">
